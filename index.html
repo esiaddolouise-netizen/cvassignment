@@ -3,105 +3,140 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Louise Esi Addo | IT Support Technician</title>
+<title>Addo Louise Esi - CV</title>
 <style>
-body{font-family:Arial,Helvetica,sans-serif;margin:0;line-height:1.6;background:#f4f6f8;color:#333}
-header{background:#0b5ed7;color:white;padding:40px 20px;text-align:center}
-section{max-width:1000px;margin:auto;padding:30px 20px}
-h2{color:#0b5ed7;border-bottom:2px solid #ddd;padding-bottom:5px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card{background:white;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
-ul{padding-left:18px}
-footer{background:#222;color:#eee;text-align:center;padding:20px;margin-top:40px}
-.badge{display:inline-block;background:#e9f1ff;color:#0b5ed7;padding:6px 12px;margin:4px;border-radius:20px;font-size:14px}
+:root{
+  --primary:#0f172a;
+  --accent:#2563eb;
+  --bg:#f1f5f9;
+  --card:#ffffff;
+  --text:#111827;
+}
+body.dark{
+  --primary:#020617;
+  --accent:#60a5fa;
+  --bg:#020617;
+  --card:#0f172a;
+  --text:#e5e7eb;
+}
+body{
+  margin:0;
+  font-family:Segoe UI, Roboto, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+header{
+  background:linear-gradient(120deg,var(--primary),var(--accent));
+  color:white;
+  padding:40px 20px;
+  text-align:center;
+}
+header h1{margin:0;font-size:34px;}
+header p{margin:6px 0;opacity:.9}
+.container{max-width:1000px;margin:auto;padding:20px}
+.card{
+  background:var(--card);
+  border-radius:16px;
+  padding:20px;
+  margin:18px 0;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+.section-title{
+  font-weight:bold;
+  font-size:20px;
+  border-left:5px solid var(--accent);
+  padding-left:10px;
+  margin-bottom:15px;
+}
+.skills span{
+  display:inline-block;
+  background:var(--accent);
+  color:white;
+  padding:6px 12px;
+  border-radius:20px;
+  margin:5px;
+  font-size:14px;
+}
+.job{margin-bottom:15px}
+.job h4{margin:4px 0}
+button{
+  background:var(--accent);
+  border:none;
+  color:white;
+  padding:10px 16px;
+  border-radius:10px;
+  cursor:pointer;
+  margin:5px;
+}
+footer{text-align:center;padding:20px;font-size:14px;opacity:.7}
 </style>
 </head>
 <body>
 <header>
-<h1>Louise Esi Addo</h1>
-<p>IT Support Technician</p>
-<p>0501150429 | esi.addo.louise@gmail.com | Ghana</p>
+  <h1>Addo Louise Esi</h1>
+  <p>IT Support Technician</p>
+  <p>0501150429 | esi.addo.louise@gmail.com</p>
+  <button onclick="toggleDark()">Toggle Dark Mode</button>
+  <button onclick="window.print()">Print CV</button>
 </header>
+<div class="container">
 
-<section>
-<h2>Professional Summary</h2>
-<p>Dedicated and detail-oriented IT Support Technician with practical experience in system administration, technical troubleshooting, and large-scale national registration systems. Skilled in diagnosing hardware and software issues, supporting users, and training technical teams.</p>
-</section>
-
-<section>
-<h2>Technical Skills</h2>
 <div class="card">
-<span class="badge">Hardware & Software Troubleshooting</span>
-<span class="badge">System Administration</span>
-<span class="badge">User Support & Training</span>
-<span class="badge">IT Inventory Management</span>
-<span class="badge">MySQL / SQL</span>
-<span class="badge">Microsoft Office Suite</span>
+<div class="section-title">Professional Summary</div>
+<p>Dedicated IT Support Technician experienced in troubleshooting, system administration, and nationwide identity registration systems. Skilled in training teams, supporting users, and maintaining operational efficiency.</p>
 </div>
-</section>
 
-<section>
-<h2>Education</h2>
-<div class="grid">
-<div class="card"><h3>Diploma in Project Management</h3><p>International Business Management Institute - 2020</p></div>
-<div class="card"><h3>BSc Information Technology</h3><p>Ghana Technology University College - 2015-2017</p></div>
-<div class="card"><h3>Diploma Information Technology</h3><p>Ghana Technology University College - 2014-2015</p></div>
-</div>
-</section>
-
-<section>
-<h2>Professional Experience</h2>
 <div class="card">
-<h3>IT Support Technician - National Identification Authority (2018-Present)</h3>
+<div class="section-title">Education</div>
 <ul>
-<li>Diagnose and resolve software and hardware faults</li>
-<li>Administer systems supporting national ID registration</li>
-<li>Train and supervise IT staff</li>
-<li>Maintain operational efficiency of registration centers</li>
+<li>Diploma in Project Management — 2020</li>
+<li>BSc. Information Technology — 2015–2017</li>
+<li>Diploma in Information Technology — 2014–2015</li>
 </ul>
 </div>
-<br/>
-<div class="card">
-<h3>National Service Personnel - National Identification Authority (2017-2018)</h3>
-<ul>
-<li>Prepared records for missing ID cards</li>
-<li>Generated replacement card data extracts</li>
-<li>Assisted staff training and inventory management</li>
-</ul>
-</div>
-<br/>
-<div class="card">
-<h3>IT Intern - Earth Investments Consulting (2017)</h3>
-<ul>
-<li>Maintained IT equipment inventory</li>
-<li>Provided front desk and user support</li>
-</ul>
-</div>
-</section>
 
-<section>
-<h2>Project Experience</h2>
 <div class="card">
-<h3>Ghana Card Registration Support</h3>
-<ul>
-<li>Technical support during nationwide registration</li>
-<li>Supervised field technical staff</li>
-<li>Managed system readiness and equipment deployment</li>
-<li>Supported data processing for replacement cards</li>
-</ul>
+<div class="section-title">Technical Skills</div>
+<div class="skills" id="skills">
+<span>Hardware Troubleshooting</span>
+<span>Software Troubleshooting</span>
+<span>System Administration</span>
+<span>MySQL</span>
+<span>SQL</span>
+<span>Microsoft Office</span>
+<span>IT Training</span>
+<span>Inventory Management</span>
 </div>
-</section>
+</div>
 
-<section>
-<h2>Languages</h2>
 <div class="card">
-<p>English - Fluent</p>
-<p>Twi - Fluent</p>
+<div class="section-title">Experience</div>
+<div class="job">
+<h4>IT Support Technician — National Identification Authority (2018–Present)</h4>
+<p>Technical support, system administration, and staff supervision for national ID registration.</p>
 </div>
-</section>
+<div class="job">
+<h4>National Service — National Identification Authority (2017–2018)</h4>
+<p>Managed missing card records, training support, and inventory management.</p>
+</div>
+<div class="job">
+<h4>IT Intern — Earth Investments Consulting (2017)</h4>
+<p>Maintained equipment inventory and provided user support.</p>
+</div>
+</div>
 
-<footer>
-<p>© 2026 Louise Esi Addo | IT Support Technician</p>
-</footer>
+<div class="card">
+<div class="section-title">Projects</div>
+<p>Supported nationwide Ghana Card registration operations including training staff, preparing systems, and handling replacement card processing.</p>
+</div>
+
+</div>
+<footer>© 2026 Addo Louise Esi</footer>
+
+<script>
+function toggleDark(){
+ document.body.classList.toggle('dark');
+}
+</script>
 </body>
 </html>
